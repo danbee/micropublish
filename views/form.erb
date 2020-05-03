@@ -214,8 +214,10 @@
             Content (HTML)
             <% if @required.include?('content') %><span class="required" title="required">*</span><% end %>
           </label>
-          <textarea id="content-html" class="form-control" rows="5" name="content[][html]"><%= content_html_value %></textarea>
-          <trix-editor input="content-html" style="display: none;"></trix-editor>
+          <textarea id="content" class="form-control" rows="5" name="content[][html]" style="display: none;">
+            <%= content_html_value %>
+          </textarea>
+          <div id="editor"></div>
           <p class="help-block">
             Enter content for this post.
             You may use rich content via the embedded

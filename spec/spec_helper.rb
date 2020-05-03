@@ -8,6 +8,7 @@ Bundler.require(:default, :test)
 
 require 'rack/test'
 require 'rspec'
+require 'webmock/rspec'
 require 'micropublish'
 
 module RSpecMixin

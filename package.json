@@ -1,0 +1,19 @@
+{
+  "name": "micropublish",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:danbee/micropublish.git",
+  "author": "Daniel Barber <github@danbarber.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "dev": "parcel watch assets/scripts/index.js --out-dir public/scripts/",
+    "build": "parcel build assets/scripts/index.js --out-dir public/scripts/"
+  },
+  "dependencies": {
+    "prosemirror-example-setup": "^1.1.2",
+    "prosemirror-schema-basic": "^1.1.2"
+  }
+}
