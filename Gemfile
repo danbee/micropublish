@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.6.5'
 
 gem 'sinatra'
 gem 'puma'
@@ -20,6 +20,8 @@ end
 group :test do
   gem 'rack-test'
   gem 'rspec'
+  gem 'pry'
+  gem 'webmock'
 end
 
 group :production do
